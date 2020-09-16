@@ -1,4 +1,9 @@
-job:
+stages:
+  - deploy
+deploy:
+    stage: deploy
+    environment:
+        name: test
     script:
     - git pull https://github.com/PuppiesMeat/JetpackGo.git master --rebase 
 
