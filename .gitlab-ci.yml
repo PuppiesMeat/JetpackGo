@@ -1,0 +1,8 @@
+job:
+    script:
+    - git pull https://github.com/PuppiesMeat/JetpackGo.git master --rebase 
+
+    only:
+      - master
+    tags:
+      - shell
